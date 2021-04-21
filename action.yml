@@ -16,3 +16,4 @@ runs:
              docker tag ${{ inputs.image_name }}:latest $TAG
              docker push $TAG
         shell: bash
+        continue-on-error: true
